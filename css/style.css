@@ -267,16 +267,16 @@ img{
   top: -7px;
 }
 
-#main-footer div:nth-child(2) input{
+#main-footer form input{
   padding: 0.5rem;
   width: 100%;
   margin: .5rem 0;
 }
-#main-footer div:nth-child(2) input:focus{
+#main-footer form input:focus{
   outline: none;
 }
 
-#main-footer div:nth-child(2) a {
+#main-footer form a {
   display: inline-block;
   width: 100%;
   text-align: center;
