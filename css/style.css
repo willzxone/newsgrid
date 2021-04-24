@@ -276,12 +276,17 @@ img{
   outline: none;
 }
 
-#main-footer form a {
+#main-footer form button {
   display: inline-block;
   width: 100%;
   text-align: center;
+  border: none;
+  color: var(--light-color);
+  cursor: pointer;
 }
-
+#main-footer form button:hover{
+  color: var(--dark-color);
+}
 #main-footer h3{
   font-weight: 800;
   padding-bottom: 0.5rem;position: relative;
