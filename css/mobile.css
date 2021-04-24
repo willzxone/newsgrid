@@ -1,0 +1,112 @@
+#main-navbar .social a{
+  display: none;
+}
+
+#showcase .showcase-container{
+grid-template-columns: 1fr;
+}
+
+#main-articles .articles{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#main-articles .articles .grid,
+#main-articles .articles .grid2{
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+
+.flex-article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.category{
+  width: 100%;
+  text-align: center;
+}
+
+#showcase .category{
+  width: inherit;
+}
+
+#main-footer div:nth-child(4){
+  position: relative;
+  top:-15px;
+}
+
+#main-footer ul{
+  position: relative;
+  top:-25px;
+}
+
+#article article .category{
+  width: inherit;}
+
+
+@media(max-width:647px) {
+  #main-navbar .container{
+    grid-template-columns: 1fr;
+  }
+  #main-navbar .logo,#main-navbar ul,#main-navbar a{
+    justify-self: center;
+  }
+  #main-navbar .logo{
+    margin-bottom: 1rem;
+  }
+  #main-navbar ul li{
+    padding:0.5rem 1rem;
+  }
+  #main-articles .articles{
+    grid-template-columns: 1fr;
+  }
+  #main-footer .footer-content{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #main-footer div:nth-child(5){
+    grid-column: 1;
+  }
+  #main-footer .logo,#main-footer h3,#main-footer div:nth-child(4) h3,#main-footer div:nth-child(4),#main-footer ul,#main-footer div:nth-child(4) .btn{
+    top: 0;
+    bottom: 0;
+  }
+  #main-footer div:nth-child(4) .btn{
+    margin-top: .5rem;
+    width: 100%;
+    text-align: center;
+  }
+  #main-footer div div div:nth-child(1),#main-footer div:nth-child(2){
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted var(--light-color);
+  }
+  #about article h1{
+    font-size: 1.5rem;
+  }
+  #about .grid,#article .article-content{
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+  #about .grid article{
+    grid-row: 1;
+  }
+  #article article .category{
+    width: inherit;
+    margin-left: 1rem;
+  }
+}
+
+@media(max-width:420px){
+  #showcase .showcase-content h1{
+    font-size: 1.2rem;
+  }
+  #showcase .showcase-content p{
+    font-size: .75rem;
+  }
+  #showcase .container{
+    padding: 0rem;
+  }
+}
